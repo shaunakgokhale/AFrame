@@ -16,15 +16,3 @@ setInterval(spin, 16);
 // 	rotationSpeed = 0.01;
 // 	console.log('mouse enter');
 // });
-
-var self = this;
-
-setTimeout( function () {
-
-        // assigning data to HTMLImageElement.src is asynchronous (see #15162)
-        // using setTimeout() avoids the warning "Texture marked for update but image is incomplete"
-
-	self.searchTexture.needsUpdate = true;
-	self.areaTexture.needsUpdate = true;
-
-}, 0 );
